@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hugo Goorickx</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="mother_nav">
+                    <div class="content">
+                        <p class="content__item">
+                            <a class="link" href="#blocHorizontal">
+                                Projects
+                            </a>
+                        </p>
+                        <p class="content__item">
+                            <a class="link" href="#">
+                                About me
+                            </a>
+                        </p>
+                    </div>
+                    <div class="daddy">
+                        <div class="content__item">
+                            <button class="button button--atlas" onclick="modif()">
+                                <span>New Projects</span>
+                                <div class="marquee" aria-hidden="true">
+                                    <div class="marquee__inner">
+                                        <span>New Projects</span>
+                                        <span>New Projects</span>
+                                        <span>New Projects</span>
+                                        <span>New Projects</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="new_prods" id="new_prods" style="display: none;">
+                <a href="">
+                    <h2>Sunnyside</h2>
+                    <img src="./imgs/sunnyside_desktop.png" alt="desktop_sunnyside">
+                </a>
+                <a href="">
+                    <h2>Sunnyside</h2>
+                    <img src="./imgs/sunnyside_desktop.png" alt="desktop_sunnyside">
+                </a>
+                <a href="">
+                    <h2>Sunnyside</h2>
+                    <img src="./imgs/sunnyside_desktop.png" alt="desktop_sunnyside">
+                </a>
+            </div>
+            <div class="global_corp">
+                <div class='main_corps'>
+                    <p class="name">Hugo Goorickx</p>
+                    <p>Web Dev</p>
+                    <p>
+                        <a class="fisrt hover-shadow">
+                            <span>+</span>
+                            <span>32</span>
+                            <span>473</span>
+                            <span>12</span>
+                            <span>96</span>
+                            <span>44</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:hugo@goorickx.be" class="fisrt hover-shadow modif">
+                            <span>E</span>
+                            <span>-</span>
+                            <span>M</span>
+                            <span>a</span>
+                            <span>i</span>
+                            <span>l</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="blocHorizontal" id="blocHorizontal" style="width: 400vw;">
+                    <a href="" class="slide two">
+                        <h2>Sunnyside</h2>
+                        <img src="./imgs/sunnyside_desktop.png" alt="desktop_sunnyside">
+                    </a>
+                    <a href="" class="slide one">
+                        <h2>Sunnyside</h2>
+                        <img src="./imgs/sunnyside_desktop.png" alt="desktop_sunnyside">
+                    </a>
+                    <a href="" class="slide two">
+                        <h2>Sunnyside</h2>
+                        <img src="./imgs/sunnyside_desktop.png" alt="desktop_sunnyside">
+                    </a>
+                    <a href="" class="slide one">
+                        <h2>Sunnyside</h2>
+                        <img src="./imgs/sunnyside_desktop.png" alt="desktop_sunnyside">
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <div class="content">
+                    <p class="content__item">
+                        <a class="link" href="mailto:hugo@goorickx.be">E-Mail</a>
+                    </p>
+                    <p class="content__item">
+                        <a class="link" href="https://www.linkedin.com/in/hugo-goorickx/">LinkedIn</a>
+                    </p>
+                    <p class="content__item">
+                        <a class="link" href="https://github.com/Hugo-Goorickx">Github</a>
+                    </p>
+                </div>
+            </nav>
+        </footer>
+    </body>
+    <script>
+        function modif()
+        {
+            let div1 = document.getElementsByClassName('new_prods')[0],
+                div2 = document.getElementsByClassName('global_corp')[0],
+                div3 = document.getElementsByClassName('container')[0];
+            if (div1.style.display == 'block')
+            {
+                div1.style.display = 'none';
+                div2.style.filter = 'blur(0rem)';
+                div3.style.filter = 'blur(0rem)';
+            }
+            else
+            {
+                div1.style.display = 'block';
+                div2.style.filter = 'blur(1.5rem)';
+                div3.style.filter = 'blur(1.5rem)';
+            }
+        }
+    </script>
+</html>
