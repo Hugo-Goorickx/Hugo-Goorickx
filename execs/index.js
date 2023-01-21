@@ -1,5 +1,4 @@
 import { Project } from './Project.js';
-import file from '../projects.json' assert {type: 'json'};
 
 let x = 0,
     Projects = [];
@@ -23,13 +22,21 @@ function modif()
     }
 }
 document.getElementById('modif').addEventListener("click", function() {modif();});
-document.getElementById('blocHorizontal').style.width = (file.projects.length + "00vw");
 
-file.projects.forEach(elem => Projects.push(new Project(elem.name, elem.description, elem.picture, elem.link, elem.date)));
+const fetchName = () => fetch('../projects.json');
 
-Projects.sort((a,b) => { return (a.date>b.date)?-1:1; });
+fetchName()
+	.then((response) => response.json())
+	.then((json) => {
+	    document.getElementById('blocHorizontal').style.width = (json.projects.length + "00vw");
+	    json.projects.forEach(elem => Projects.push(new Project(elem.name, elem.description, elem.picture, elem.link, elem.date)));
+	    Projects.sort((a,b) => { return (a.date>b.date)?-1:1; });
 
-Projects.forEach(elem => elem.gen_card(x++));
-
-for (let index = 0; index < 3; index++)
-    Projects[index].gen_new_project(index);
+        Projects.forEach(elem => elem.gen_card(x++));
+        console.log(Projects);
+        for (let index = 0; index < 3; index++)
+            Projects[index].gen_new_project(index);
+	})
+	.catch((error) => {
+		console.log("There was an error!", error);
+	});
