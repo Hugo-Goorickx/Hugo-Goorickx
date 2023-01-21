@@ -112,16 +112,33 @@ header {
 	z-index: 1;
 	position: fixed;
 	font-family: $font-family_1;
-	height: 10%;
+    @media (min-width: 767px) {
+        height: 10%;
+    }
+    @media (max-width: 767px) {
+        height: 5%;
+    }
     .mother_nav {
-        display: grid;
-        grid-template-columns: 80% 20%;
-        grid-template-rows: 1fr;
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 80% 20%;
+            grid-template-rows: 1fr;
+        }
+        @media (max-width: 767px) {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr;
+        }
         width: 100vw;
         .daddy {
 
-            grid-area: 1/2/2/3;
-            display: flex;
+            @media (min-width: 768px) {
+                grid-area: 1/2/2/3;
+                display: flex;
+            }
+            @media (max-width: 767px) {
+                display: none;
+            }
             justify-content: center;
             align-items: center;
         }
@@ -427,10 +444,85 @@ a
 
 .content 
 {
+    @media (min-width: 767px) {
+        width: 20vw;
+    }
+    @media (max-width: 767px) {
+        position: fixed;
+        width: 100vw;
+    }
     grid-area: 1/1/2/2;
     margin: auto auto;
     display: flex;
+    -moz-column-gap: 2vw;
+    column-gap: 2vw;
+    margin-left: 2vw;
+    .content__item 
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .link 
+        {
+            cursor: pointer;
+            @media (min-width: 768px) {
+                font-size: 2vh;
+                margin-top: 1.5vh;
+
+            }
+            @media (max-width: 767px) {
+                margin-top: 0vh;
+                font-size: 1.2vh;
+
+            }
+
+            position: relative;
+            white-space: nowrap;
+            font-weight: 600;
+            text-transform: lowercase;
+            &::before 
+            {
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                height: 10px;
+                background: currentColor;
+                pointer-events: none;
+                opacity: 0;
+                content: "";
+            }
+            &::after 
+            {
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                height: 10px;
+                background: currentColor;
+                pointer-events: none;
+                opacity: 0;
+                content: "";
+            }
+            &:hover 
+            {
+                &::before 
+                {
+                    opacity: 1;
+                    -webkit-animation: lineUp 0.3s ease forwards;
+                    animation: lineUp 0.3s ease forwards;
+                }
+            }
+        }
+    }
+}
+.content1
+{
     width: 20vw;
+    grid-area: 1/1/2/2;
+    margin: auto auto;
+    display: flex;
     -moz-column-gap: 2vw;
     column-gap: 2vw;
     margin-left: 2vw;

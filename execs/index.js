@@ -23,7 +23,7 @@ function modif()
 }
 document.getElementById('modif').addEventListener("click", function() {modif();});
 
-const fetchName = () => fetch('../projects.json');
+const fetchName = () => fetch('./projects.json');
 
 fetchName()
 	.then((response) => response.json())
