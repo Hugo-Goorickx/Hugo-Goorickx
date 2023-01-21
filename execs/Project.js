@@ -13,6 +13,7 @@ export class Project {
         let add_section = document.getElementById('blocHorizontal'),
             a = document.createElement('a'),
             h2 = document.createElement('h2'),
+            p = document.createElement('p'),
             img = document.createElement('img');
 
         a.href = this.link;
@@ -20,10 +21,12 @@ export class Project {
 
         h2.innerHTML = this.name;
 
+        p.innerHTML = '[ ' + this.description + ' ]';
+
         img.src = this.picture;
         img.alt = this.name;
 
-        a.append(h2, img);
+        a.append(h2, p, img);
 
         add_section.appendChild(a);
     }
