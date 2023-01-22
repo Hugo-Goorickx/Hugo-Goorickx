@@ -5,7 +5,7 @@ let x = 0,
 
 function modif()
 {
-    let div1 = document.getElementsByClassName('new_prods')[0],
+    let div1 = document.getElementsByClassName('main__div__1')[0],
         div2 = document.getElementsByClassName('global_corp')[0],
         div3 = document.getElementsByClassName('container')[0];
     if (div1.style.display == 'block')
@@ -31,7 +31,7 @@ fetchName()
 	    document.getElementById('blocHorizontal').style.width = (json.projects.length + "00vw");
 	    json.projects.forEach(elem => Projects.push(new Project(elem.name, elem.description, elem.picture, elem.link, elem.date)));
 	    Projects.sort((a,b) => { return (a.date>b.date)?-1:1; });
-
+        let x = 1;
         Projects.forEach(elem => elem.gen_card(x++));
         console.log(Projects);
         for (let index = 0; index < 3; index++)

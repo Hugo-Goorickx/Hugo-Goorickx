@@ -17,7 +17,7 @@ export class Project {
             img = document.createElement('img');
 
         a.href = this.link;
-        a.className = 'slide ' + ((x++ % 2)? 'two' : 'one');
+        a.className = ((x++ % 2)? 'mode2' : 'mode1');
 
         h2.innerHTML = this.name;
 
