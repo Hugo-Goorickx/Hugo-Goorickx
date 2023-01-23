@@ -133,7 +133,6 @@ input {
 }
 .links-content {
   width: 20vw;
-  grid-area: 1/1/2/2;
   margin: auto auto;
   display: flex;
   -moz-column-gap: 2vw;
@@ -148,6 +147,27 @@ input {
   }
 }
 
+.down {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 4vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .down {
+    margin-top: 1.5vh;
+  }
+}
+@media (min-width: 767px) {
+  .down {
+    margin-top: 0vh;
+  }
+}
+
 .links-content__item {
   width: 100%;
   height: 100%;
@@ -159,7 +179,6 @@ input {
   position: relative;
   white-space: nowrap;
   font-weight: 600;
-  text-transform: lowercase;
 }
 @media (min-width: 768px) {
   .links-content__item {
