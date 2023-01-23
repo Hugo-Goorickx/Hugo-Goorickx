@@ -369,7 +369,7 @@ main .main__div__2 * {
 }
 @media (min-width: 768px) {
   main .main__div__2 {
-    width: 50%;
+    margin-left: 40%;
     font-size: 200%;
   }
 }
