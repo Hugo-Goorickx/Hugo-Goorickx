@@ -1,13 +1,12 @@
 import { Project } from './Project.js';
 
-let x = 0,
-    Projects = [];
+let Projects = [];
 
 function modif()
 {
     let div1 = document.getElementsByClassName('main__div__1')[0],
-        div2 = document.getElementsByClassName('global_corp')[0],
-        div3 = document.getElementsByClassName('container')[0];
+        div2 = document.getElementsByClassName('main__div__2')[0],
+        div3 = document.getElementsByClassName('main__div__3')[0];
     if (div1.style.display == 'block')
     {
         div1.style.display = 'none';
