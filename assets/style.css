@@ -362,6 +362,7 @@ main .main__div__2 {
   height: 100vh;
   margin: auto auto;
   text-align: left;
+  margin-left: 40%;
 }
 main .main__div__2 * {
   margin-top: 2vh;
@@ -369,7 +370,7 @@ main .main__div__2 * {
 }
 @media (min-width: 768px) {
   main .main__div__2 {
-    margin-left: 40%;
+    width: 50%;
     font-size: 200%;
   }
 }
