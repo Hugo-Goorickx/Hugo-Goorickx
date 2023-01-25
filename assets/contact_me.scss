@@ -1,0 +1,112 @@
+@import "https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap";
+@import './reset';
+@import './variables';
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: $font-family_2;
+
+	background-color: $background-color_1;
+	color: $color_1;
+	width: 100vw;
+	height: 100vh;
+    @media (min-width: 768px) { width: 50%; font-size: 200%; }
+    @media (min-width: 1024px) { width: 35%; font-size: 200%; }
+    @media (max-width: 767px) { margin-left: 5%; font-size: 150%; }
+}
+
+main
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form 
+    {
+        display: flex;
+        justify-content: flex-start;
+        row-gap: 4vh;
+        flex-direction: column;
+        width: 50%;
+        max-width: 600px;
+        
+        .input-container {
+            height: 5vh;
+            position: relative;
+            width: 100%;
+            .input {
+                background-color: $color_3;
+                border-radius: 12px;
+                height: 110%;
+                width: 100%;
+                border: 0;
+                box-sizing: border-box;
+                color: $color_1;
+                font-size: x-large;
+                outline: 0;
+            }
+            // .area {
+            //     height: 400%;
+            // }
+            .placeholder {
+                color: #65657b;
+                font-size: x-large;
+                font-family: sans-serif;
+                left: 2vh;
+                line-height: 1.5vh;
+                pointer-events: none;
+                position: absolute;
+                transform-origin: 0 50%;
+                transition: transform 200ms, color 200ms;
+                top: 2vh;
+            }
+            
+            .input:focus ~ .placeholder,
+            .input:not(:placeholder-shown) ~ .placeholder {
+                transform: translateY(-4vh) translateX(3vh) scale(0.75);
+            }
+            
+            .input:not(:placeholder-shown) ~ .placeholder {
+                color: #808097;
+            }
+            
+            .input:focus ~ .placeholder {
+                color: #dc2f55;
+            }
+        }
+        .large {
+            height: 15vh;
+        }
+    }
+}
+
+header
+{
+    font-family: $font-family_1;
+}
+
+  .submit {
+    background-color: $color_1;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: $color_3;
+    cursor: pointer;
+    font-size: large;
+    height: 5vh;
+
+    text-align: center;
+	font-family: $font-family_2;
+    font-weight: 600;
+    width: 100%;
+  }
+  
+  .submit:active {
+    color: $color_2;
+
+  }
+  

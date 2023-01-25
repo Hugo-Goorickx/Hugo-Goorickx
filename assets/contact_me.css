@@ -1,0 +1,170 @@
+@import "https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap";
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Chivo Mono", monospace;
+  background-color: rgb(40, 39, 39);
+  color: wheat;
+  width: 100vw;
+  height: 100vh;
+}
+@media (min-width: 768px) {
+  body {
+    width: 50%;
+    font-size: 200%;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    width: 35%;
+    font-size: 200%;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    margin-left: 5%;
+    font-size: 150%;
+  }
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main form {
+  display: flex;
+  justify-content: flex-start;
+  row-gap: 4vh;
+  flex-direction: column;
+  width: 50%;
+  max-width: 600px;
+}
+main form .input-container {
+  height: 5vh;
+  position: relative;
+  width: 100%;
+}
+main form .input-container .input {
+  background-color: rgb(84, 83, 83);
+  border-radius: 12px;
+  height: 110%;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+  color: wheat;
+  font-size: x-large;
+  outline: 0;
+}
+main form .input-container .placeholder {
+  color: #65657b;
+  font-size: x-large;
+  font-family: sans-serif;
+  left: 2vh;
+  line-height: 1.5vh;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 2vh;
+}
+main form .input-container .input:not(:-moz-placeholder-shown) ~ .placeholder {
+  transform: translateY(-4vh) translateX(3vh) scale(0.75);
+}
+main form .input-container .input:not(:-ms-input-placeholder) ~ .placeholder {
+  transform: translateY(-4vh) translateX(3vh) scale(0.75);
+}
+main form .input-container .input:focus ~ .placeholder,
+main form .input-container .input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-4vh) translateX(3vh) scale(0.75);
+}
+main form .input-container .input:not(:-moz-placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+main form .input-container .input:not(:-ms-input-placeholder) ~ .placeholder {
+  color: #808097;
+}
+main form .input-container .input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+main form .input-container .input:focus ~ .placeholder {
+  color: #dc2f55;
+}
+main form .large {
+  height: 15vh;
+}
+
+header {
+  font-family: "Unbounded", cursive;
+}
+
+.submit {
+  background-color: wheat;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: rgb(84, 83, 83);
+  cursor: pointer;
+  font-size: large;
+  height: 5vh;
+  text-align: center;
+  font-family: "Chivo Mono", monospace;
+  font-weight: 600;
+  width: 100%;
+}
+
+.submit:active {
+  color: rgb(40, 39, 39);
+}/*# sourceMappingURL=contact_me.css.map */
