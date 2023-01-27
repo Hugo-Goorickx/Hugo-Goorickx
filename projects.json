@@ -3,56 +3,56 @@
     [
         {
             "name":"Sunnyside",
-            "description":"Premier projet realise durant mon parcours a BeCode, il ne s'agit que d'une vitrine en HTML/CSS.",
+            "description":"Premier projet réalisé durant mon parcours à BeCode, il s'agit seulement d'une vitrine en HTML/CSS.",
             "picture":"./imgs/sunnyside_desktop.png",
             "link":"https://sunnyside.hugoorickx.be",
             "date":"2022-11-23"
         },
         {
             "name":"Weather App",
-            "description":"Ce projet utilise une API, celle de Open weather map. Ainsi je fournis a l'utilisateur le detail meteo d'une ville sur les 7 prochains jours.",
+            "description":"Ce projet utilise une API, celle de OpenWeatherMap. Ainsi, je fournis à l'utilisateur les détails météo d'une ville pour les 7 prochains jours.",
             "picture":"./imgs/weather_desktop.png",
             "link":"https://weather.hugoorickx.be",
             "date":"2022-12-23"
         },
         {
             "name":"Collection",
-            "description":"Il est le premier projet en utilisant du JavaScript. A partir d'un fichier JSON, une collection est generee en HTML contenant pour chaque filme: Un titre, une image, un descriptif et d'autres donnees.",
+            "description":"Il s'agit de mon premier projet utilisant du JavaScript. À partir d'un fichier JSON, une collection est générée en HTML contenant pour chaque film : un titre, une image, une description et d'autres données.",
             "picture":"./imgs/collection.png",
             "link":"https://collection.hugoorickx.be",
             "date":"2022-12-02"
         },
         {
             "name":"Kitchen project",
-            "description":"Il s'agit du premier projet de groupe (4 personnes). Le site est une vitrine pour un restaurant (ici une friterie), les plats y sont affiches et il y est possible de faire une commande. Le site possede un dark mode et un light mode.",
+            "description":"Il s'agit du premier projet en groupe (avec 4 personnes). Le site est une vitrine pour un restaurant (ici une friterie), les plats y sont affichés et il est possible de passer une commande. Le site possède un mode sombre et un mode clair.",
             "picture":"./imgs/ALaBonneFrite.png",
             "link":"https://bonne-frite.hugoorickx.be",
             "date":"2022-12-08"
         },
         {
             "name":"Pong",
-            "description":"Il s'agit de mon premier projet graphique, utilisant Canva. Un simple pong multijoueur.",
+            "description":"Il s'agit de mon premier projet graphique, réalisé avec Canva. Il s'agit d'un jeu simple de pong multijoueur.",
             "picture":"./imgs/pong.png",
             "link":"https://pong.hugoorickx.be",
             "date":"2022-12-10"
         },
         {
             "name":"Clock",
-            "description":"Ce projet affiche simplement l'heure et la date actuelle utilisant date, en bref une simple horloge.",
+            "description":"Ce projet affiche simplement l'heure et la date actuelle en utilisant l'objet JavaScript Date, en bref une horloge simple.",
             "picture":"./imgs/clock.png",
             "link":"https://clock.hugoorickx.be",
             "date":"2022-12-12"
         },
         {
             "name":"Planner",
-            "description":"Ce projet de groupe permettera a l'utilisateur d'ajouter des taches a realiser. Chaque tache aura un nom, une date de fin, une description et un statut. Il est egalement possible de les supprimer.",
+            "description":"Ce projet de groupe permettra à l'utilisateur d'ajouter des tâches à réaliser. Chaque tâche aura un nom, une date d'échéance, une description et un statut. Il sera également possible de les supprimer.",
             "picture":"./imgs/project-planner.png",
             "link":"https://project-planner.hugoorickx.be",
             "date":"2022-12-16"
         },
         {
             "name":"Gen readme",
-            "description":"Ce projet a pour but de rapidement creer des readme pour mes autres projets. Il est encore en cours de developpement d'ou le design rustre et les fonctionnalites ne sont pas toutes presentes ou parfaites.",
+            "description":"Ce projet a pour but de créer rapidement des readme pour mes autres projets. Il est encore en cours de développement, c'est pourquoi le design est sommaire et certaines fonctionnalités ne sont pas encore présentes ou parfaites.",
             "picture":"./imgs/gen-readme.png",
             "link":"https://readme-generator.hugoorickx.be",
             "date":"2023-01-18"
