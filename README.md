@@ -1,8 +1,7 @@
 ## Hey, moi c'est Hugo
 
 Bonjour, j'ai cumulé une formation en devops chez 19 et une autre en développeur backend chez BeCode.
-À terme, j'aimerais devenir développeur backend.
-Je partage sur ce github l'ensemble de mes projets realises au cours de mes divers parcours scolaires.
+Je partage sur ce github les projets que j'ai realises et qui m'ont le plus plu au cours de mes divers parcours scolaires.
 
 ![<hgoorick>'s 42 stats](https://badge.mediaplus.ma/colorfulwaves/hgoorick)
 
@@ -22,18 +21,11 @@ Je partage sur ce github l'ensemble de mes projets realises au cours de mes dive
   
   #### Details:
   
-- [Libft](https://github.com/Hugo-Goorickx/Cursus_19/tree/main/project_01_libft)  
-- [Get next line](https://github.com/Hugo-Goorickx/Cursus_19/tree/main/project_02_get_next_line)
-- [Ft printf](https://github.com/Hugo-Goorickx/Cursus_19/tree/main/project_03_ft_printf)
 - [Minitalk](https://github.com/Hugo-Goorickx/Cursus_19/tree/main/project_05_minitalk)
-- [Push swap](https://github.com/Hugo-Goorickx/Cursus_19/tree/main/project_06_push_swap)
 - [So long](https://github.com/Hugo-Goorickx/Cursus_19/tree/main/project_07_so_long)
-- [Philosophers](https://github.com/Hugo-Goorickx/Cursus_19/tree/main/project_08_philosophers)
 - [Minishell](https://github.com/Hugo-Goorickx/Cursus_19/tree/main/project_09_minishell)
-- [Modules C++](https://github.com/Hugo-Goorickx/Cursus_19/tree/main/project_11_cpp_modules)
 - [Cub3D](https://github.com/Hugo-Goorickx/Cursus_19/tree/main/project_12_cub3D)
-- [Ft Containers](https://github.com/Hugo-Goorickx/Cursus_19/tree/main/project_13_ft_containers)
-- [Inception](https://github.com/Hugo-Goorickx/Cursus_19/tree/main/project_14_inception)
+- [Transcendance](https://github.com/Aligo19/ALiGo)
 
   ### BeCode :
   
@@ -47,8 +39,6 @@ Je partage sur ce github l'ensemble de mes projets realises au cours de mes dive
 - [Planner project](https://github.com/Hugo-Goorickx/Planner_project)
 - [ToDo](https://github.com/Hugo-Goorickx/Planner_project)
 - [Pong](https://github.com/Hugo-Goorickx/Pong)
-- [Clock](https://github.com/Hugo-Goorickx/clock)
-- [Weather App](https://github.com/Hugo-Goorickx/Weather-App)
 - [Formulaire](https://github.com/Hugo-Goorickx/interactive_form)
 - [Cogip](https://github.com/Hugo-Goorickx/cogip)
 
@@ -56,6 +46,7 @@ Je partage sur ce github l'ensemble de mes projets realises au cours de mes dive
   
 - [Reaadme Generator](https://github.com/Hugo-Goorickx/README_Gen)
 - [Site Web perso](https://github.com/Hugo-Goorickx/Hugo-Goorickx)
+
 
 ----------
   
