@@ -61,8 +61,6 @@ Je partage sur ce github l'ensemble de mes projets realises au cours de mes dive
   
   ## Mes reseaux
   
-Mail : hugo@hugoorickx.be
+Mail : hugoorickx@gmail.com
   
-Discord : LeGodurix#6228
-  
-Mon site : [hugoorickx.be](https://me.hugoorickx.be)
+Discord : legodurix
